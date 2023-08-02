@@ -1,3 +1,4 @@
+import chalk from 'chalk';
 import pegaArquivo from "./index.js";
 import fs from 'fs'
 
@@ -28,6 +29,9 @@ async function processaTexto(argumentos) {
             exibeResultado(`${caminho}/${nomeDeArquivo}`)
 
         })
+    }else{
+        console.log('opacao invalida')
+        return
     }
 }
 
